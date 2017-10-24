@@ -1,3 +1,14 @@
 page-home {
-
+    .main-table {
+        width: 100%;
+    }
+    .row {
+        width: 100%;
+        height: calc(20vh - (45px / 5));
+    }
+    .column {
+        padding: 10px;
+        text-align: center;
+        width: calc((100vw / 5));
+    }
 }

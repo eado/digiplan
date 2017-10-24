@@ -1,5 +1,6 @@
 {
   "name": "digiplan",
-  "app_id": "",
-  "type": "ionic-angular"
+  "app_id": "f747aca5",
+  "type": "ionic-angular",
+  "integrations": {}
 }

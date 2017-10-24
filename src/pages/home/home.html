@@ -1,14 +1,73 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      <button ion-button (click)="openSettings()">
+        <ion-icon name="arrow-dropleft"></ion-icon>
+      </button>
+      October 2017
+      <button ion-button (click)="openSettings()">
+        <ion-icon name="arrow-dropright"></ion-icon>
+      </button>
     </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openSettings()">
+        <ion-icon name="cog"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <table class="main-table" (click)="openDay()">
+    <tr class="row">
+      <td class="column">
+        <h4>Mon 11</h4>
+        <ion-list>
+          <ion-list-header>
+            Math
+          </ion-list-header>
+          <ion-item>2.2 HW
+            <p item-end>Due at 10:12 am</p>
+          </ion-item>
+          <br>
+          <ion-list-header>
+            Science
+          </ion-list-header>
+          <ion-item>Chapter 1 Worksheet
+            <p item-end>Due at 11:06 am</p>
+          </ion-item>
+          <br>
+          <ion-list-header>
+            LA
+          </ion-list-header>
+          <ion-item>Short Story Draft
+            <p item-end>Due at 1:02 pm</p>
+          </ion-item>
+          <br>
+          <ion-list-header>
+            Global Studies
+          </ion-list-header>
+          <ion-item>Essay
+            <p item-end>Due on Friday at 3:55 pm</p>
+          </ion-item>
+          <br>
+          <ion-item>
+            <a>Add Task</a>
+          </ion-item>
+        </ion-list>
+      </td>
+      <td class="column">
+        <h4>Tue 12</h4>
+      </td>
+      <td class="column">
+        <h4>Wed 13</h4>
+      </td>
+      <td class="column">
+        <h4>Thu 14</h4>
+      </td>
+      <td class="column">
+        <h4>Fri 15</h4>
+      </td>
+    </tr>
+  </table>
 </ion-content>
